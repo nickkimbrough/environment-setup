@@ -5,3 +5,4 @@ code --install-extension vscode-icons-team.vscode-icons
 code --install-extension redhat.vscode-yaml
 code --install-extension davidanson.vscode-markdownlint
 code --install-extension oderwat.indent-rainbow
+code --install-extension eamodio.gitlens

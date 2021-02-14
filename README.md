@@ -1,33 +1,19 @@
 # environment-setup
 
 This project contains a one click setup for my preferred development environment
-on Windows 10. It will install and fully configure the following:
+on Windows 10. It will install the following:
 
 - Winget
-  - http://aka.ms/winget-InsiderProgram
 - Windows Terminal
-  - winget install --id=Microsoft.WindowsTerminal -e --silent
-  - Windows Terminal Context Menu
-    - https://github.com/kerol2r20/Windows-terminal-context-menu
 - WSL With Ubuntu
 - Docker Desktop
 - VSCode
-- Powershell latest version
+- Powershell Core
 - Posh-Git
-  - Install-Module posh-git -AllowPrerelease
 - Powertoys
-- Git for Windows
-- Windows Taskbar Icons
-  - Microsoft Edge
-  - Windows Terminal
-  - VsCode
+- Git
 - WinMerge
-  - https://winmerge.org/downloads/
 - Powershell 7
-  - winget install --id=Microsoft.PowerShell -e --silent
-
-Powershell profile
-Import-Module posh-git -AllHosts
 
 # Installing
 
@@ -47,15 +33,23 @@ ms-windows-store://pdp/?productid=9nblggh4nns1
 
 Install this app.
 
-From an admin CMD prompt:
+From an admin PowerShell prompt (not tested yet):
 
 ```powershell
-winget install git --silent
-winget install powertoys --silent
+git clone https://github.com/nickkimbrough/environment-setup.git
+cd .\environment-setup\Scripts
+.\Install-WingetApplications.ps1
+.\Install-Cmdlets.ps1
+.\Enable-WSL.ps1
+.\Install-VSCodeExtensions.ps1
 ```
 
-```
-git clone
-```
+# Future Ideas
 
-...WIP to be continued
+- Windows Taskbar Icons
+  - Microsoft Edge
+  - Windows Terminal
+  - VsCode
+
+    - Windows Terminal Context Menu
+    - https://github.com/kerol2r20/Windows-terminal-context-menu
