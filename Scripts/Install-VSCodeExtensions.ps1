@@ -1,3 +1,5 @@
+# BUG BUG for some reason the code environment variable wasn't in my path
+# at this point.
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension coenraads.bracket-pair-colorizer
 code --install-extension ms-vscode.powershell
